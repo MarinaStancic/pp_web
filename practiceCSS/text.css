@@ -1,0 +1,26 @@
+font-family: 'Itim', cursive;
+
+
+body{
+ font-size: 18px;
+ font-weight:bold;   
+}
+
+.firstParagraf{
+    font-family: Itim,cursive;
+    font-style: italic;
+}
+
+.secondParagraf{
+    font-family: Arial;
+    font-size: Oblique;
+}
+
+.thirdParagraf{
+    font-family: Courier;
+}
+
+#a{
+    font-family: italic;
+}
+

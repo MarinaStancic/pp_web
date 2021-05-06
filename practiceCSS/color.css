@@ -1,11 +1,42 @@
 .first {
+    background-color: #976320;
     color: rgb(0, 206, 209);
+    opacity: 0.5;
 }
 
 .second {
+    background-color: rgba(225,0,9,0.5);
     color: rgb(255, 20, 147);
 }
 
 .third {
+    background-color: #00008b;
     color: rgb(255, 215, 0);
+    opacity: 0.4;
+}
+
+div img{
+    opacity: 0.5;
+}
+
+table{
+    width: 900px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.aliveBlue{
+    background-color: aliceblue;
+}
+.hotPink{
+    background-color: hotpink;
+}
+.yellow{
+    background-color:yellow;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: pink;
 }
