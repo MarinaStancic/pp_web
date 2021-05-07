@@ -1,0 +1,39 @@
+
+p.prvi{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+p.drugi{
+    text-transform: uppercase;
+    text-align: right; 
+    ;   
+}
+
+p.treci paragraf{
+    text-align: center;
+}
+
+#lista{
+    color: aqua;
+    text-shadow: 2px,2px,2px,rgb(32, 2, 28);
+}
+
+a:hover{
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+
+a:link{
+    color:blue;
+}
+
+a:active{
+    color: khaki;
+}
+
+a:visited{
+    color: lightcoral;
+}
