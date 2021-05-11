@@ -1,40 +1,51 @@
- .title{
-    width: 960px; 
-    margin-top: 50px;
-    margin:auto;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    background-color: pink;
-    color: brown;
-    font-family: Arial;
-    box-shadow: inset 0 0 10px #777777;
-    border-radius: 10px;
-    text-align: center;
-} 
-
-.first{
-    background-color: papayawhip;
-    width: 300px;
-    border: 5px dashed red;
-    margin: 10px auto 10px auto;
+.firstUnordered{
+list-style-type: circle;
 }
 
-.second{
-    background-color: plum;
-    width: 400px;
-    height: 300px;
-    max-height: 200px;
-    overflow: auto;
-    border: 5px solid green;
-    margin: 0;
-    margin-right: 20px;
-    visibility: hidden;
+.secondUnordered{
+list-style-type: square;
 }
 
-.third{
-    width: 300px;
-    background-color: palevioletred;
-    border: 5px dashed red;
-    margin-right: 20px;
-    visibility: hidden;
+.firstOrdered{
+list-style-type: upper-alpha;
+}
+
+.secondOrdered{
+list-style-type: upper-roman;
+}
+
+.additionalUnordered{
+    width: 200px;
+list-style-image: url("./bullet.png");
+}
+
+.additionalUnorderedList{
+    width: 200px;
+    list-style-position: inside;
+    list-style-image: url("./bullet.png");
+}
+
+.table{
+    margin: auto;
+}
+
+.firstRow{
+    background-color: rgb(173, 15, 15);
+}
+
+.secondRow{
+    height: 100px; 
+}
+
+tr:hover{
+    background-color: yellow;
+}
+
+
+tr:nth-child(even) {
+    background-color: rgb(218,220,224) 
+}
+
+img{
+    height: 100px;
 }
