@@ -1,0 +1,66 @@
+/*general styles*/
+
+body{
+    background-color: silver ;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-nav{
+    background-color: orange;
+    padding: 15px;
+}
+
+.main-nav > li{
+    display: inline-block;
+    position: relative;
+    background: silver;
+}
+
+.main-nav > li > a{
+    color: green;
+    padding: 5px 20px;
+    transition: all .3s ease;
+}
+
+.main-nav > li:hover > a{
+    color:palevioletred;
+    background-color: powderblue;
+    border-radius: 4px;
+}
+
+.main-nav li ul {
+    display: none;
+    position: absolute;
+    background-color: sandybrown;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+} 
+
+.main-nav > li:hover ul{
+    display: block;
+}
+
+.main-nav li ul li a{
+    display: block;
+    color: skyblue;
+    padding: 5px 20px;
+    min-width: 12px;
+    font-size: 14px;
+    border-bottom: solid 1px #ccc;
+}
+
+.main-nav li ul li a:hover{
+    background-color: teal;
+}
+
+.main-nav li ul li:last-child a{
+    border-bottom: none;
+}

@@ -1,0 +1,28 @@
+.firstDiv{
+    width: 200px;
+    height: 200px;
+}
+
+.firstDiv{
+    background-color: #c1392b;
+    position: absolute;
+    z-index: 1;
+}
+
+.secondDiv{
+    background-color: #ffbe00;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+
+.thirdDiv{
+    background-color: #2d3e50;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: 1;
+}
+
+

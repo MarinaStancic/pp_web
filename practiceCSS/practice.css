@@ -1,0 +1,59 @@
+p{
+    font-family: cursive;
+}
+
+/* body{
+    background-image: url("https://i.pinimg.com/originals/81/f8/af/81f8af17401e5bd681c9cb20e6b221dd.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+
+.fistImg{
+position: relative;
+top: 50px;
+left: 100px;
+}
+
+.secondImg{
+position: absolute;
+right: 10px;
+top:15px
+}
+
+.thirdImg{
+position: absolute;
+bottom: 0px;
+}
+
+.button{
+   position: fixed;
+   margin: 0;
+   right:0;
+   bottom: 0;
+   background-color: pink;
+   width: 100px;
+   height: 30px;
+   text-align: center;
+   font-size: 1.5em;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.secondDiv{
+    display: inline;
+    margin: 0 auto;
+    width: 800px;
+    height: 50px;
+}
+.firstRow{
+    background-color: #ffbe00;
+}
+
+.home{
+    background-color: #dddddd;
+}
+
+.menu2:hover.dropdownContent{
+   display: block;
+}
