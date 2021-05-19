@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("./banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 800px;
+    position: relative;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px;
+    float: left;
+}
+#logo1{
+    color:rgb(224, 137, 22);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    float: left;
+}
+#logo2{
+    color: white;
+    float: left;
+    padding-top: 1px;
+    padding-left: 5px;
+}
+.menu{
+    float: right;
+    margin: 10px;
+}
+.menu>li{
+    display: inline;
+    padding: 20px;
+}
+.menu>li>a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+.menu>li>a:hover{
+    color: black;
+}
+.title-section{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+h1{
+    font-size: 60px;
+    color: white;
+}
+#read-more{
+    color: white;
+    background-color:rgb(35, 133, 224);
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+/*second section*/
+
+.title-section{
+    font-size: 50px;
+    position: relative;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.about-content{
+    display: flex;
+    padding: 40px 150px;
+}
+.about-description{
+    flex: 1;
+    margin: 0 30px;
+}
+h4{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgba(130,195,245,255);
+    font-size: 30px;
+    width: fit-content;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.about-image{
+    background-image: url("./about.jpg");
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 300px;
+}
+.about-list{
+    list-style-position: inside;
+}
+.about-list>li{
+    list-style-image:url("./arrow_bullet.png");
+    padding: 10px;
+}
+
+/*third section*/
+
+.people-content{
+  padding: 0 150px;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.people-description{
+  flex: 1;
+  background-color: rgba(130,195,245,255);
+  margin: 0 20px;
+}
+
+.people-description>p{
+    float: left;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.name{
+    display: inline;
+}
+.name>img{
+    border-radius: 50%;
+    border: 2px solid white;
+    float: left;
+    padding: 4px;
+    width: 90px;
+    margin: 30px;
+}
+.name>span{
+    margin-top: 70px;
+    font-size: 20px;
+    float: left;
+}
+
+/*fourth section*/
+
+.contact-content{
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.contact-type{
+    flex: 1;
+}
+.contact-type:nth-child(1){
+    background-color: rgb(24, 214, 141);
+}
+.contact-type:nth-child(2){
+    background-color: rgb(182, 49, 93);
+}
+.contact-type:nth-child(3){
+    background-color: rgb(19, 78, 167);
+}
+.contact-type:nth-child(4){
+    background-color: rgb(20, 115, 223);
+}
+.contact-type > h4{
+  font-size: 30px;
+  text-align: justify;
+  padding-top: 20px;
+}
+.info{
+    color: white;
+    padding-left: 80px;
+}
+#house{
+   width: 200px; 
+   height: 200px;
+   margin-left: 160px;
+}  
+#slicice{
+   height: 20px;
+   width: 20px;
+   margin-left: 75px;
+  margin-top: 30px;
+}
+
+/*Fifth page*/
+
+form{
+    padding: 15px 100px;
+}
+input{
+    border-bottom: 1px solid black;
+    height: 50px;
+    width: 29%;
+}
+.input-field{
+    margin: 5px 8px;
+}
+textarea{
+    width: 90%;
+    margin-top: 20px;
+}
+#submit{
+    height: 40px;
+    width: 100px;
+    margin: 15px;
+    color: white;
+    background-color: rgb(202, 129, 20);
+}
+footer{
+    background-color: rgb(61, 53, 53);
+    height: 130px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: white;
+}
