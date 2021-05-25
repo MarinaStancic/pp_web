@@ -1,0 +1,48 @@
+p {
+  font-size: 30px;
+  background-color: #c79319;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #8c1291;
+  width: 50%;
+  text-align: center;
+  overflow-y: scroll;
+  margin: auto;
+  height: 200px;
+  margin-top: 50px; }
+
+nav ul {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 300px; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  text-decoration: none;
+  width: 300px;
+  height: 40px;
+  color: crimson;
+  background-color: #c7d410;
+  text-align: center;
+  font-weight: bold; }
+
+li {
+  box-shadow: 15px 10px 10px #232525;
+  border-radius: 20px; }
+
+li:nth-child(3) {
+  text-shadow: 2px 3px #2f288f;
+  direction: rtl;
+  font-style: italic; }
+
+.firstParagraf {
+  box-shadow: 15px 10px 10px #232525;
+  border-radius: 20px; }
+
+.secondParagraf {
+  text-shadow: 2px 3px #2f288f;
+  direction: rtl;
+  font-style: italic; }
+
+/*# sourceMappingURL=practice.css.map */
