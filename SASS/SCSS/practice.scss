@@ -1,0 +1,61 @@
+p{
+    font-size: 30px;
+    background-color: rgb(199, 147, 25);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(140, 18, 145);
+    width: 50%;
+    text-align: center;
+    overflow-y: scroll;
+    margin: auto;
+    height: 200px;
+    margin-top: 50px;
+}
+
+
+nav{
+    ul{
+       list-style: none;
+       margin-top: 50px;
+       margin-left: 300px;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        width: 300px;
+        height: 40px;
+        color: crimson;
+        background-color: rgb(199, 212, 16);
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@mixin text-shadow{
+    text-shadow: 2px 3px rgb(47, 40, 143);
+    direction: rtl;
+    font-style: italic;
+}
+@mixin box-shadow (){
+    box-shadow: 15px 10px 10px rgb(35, 37, 37);
+    border-radius: 20px;
+}
+
+
+li{
+    @include box-shadow();
+}
+li:nth-child(3){
+    @include text-shadow();
+}
+
+.firstParagraf{
+    @include box-shadow();
+}
+.secondParagraf{
+    @include text-shadow();
+}
+
