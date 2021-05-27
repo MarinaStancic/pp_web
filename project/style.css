@@ -63,6 +63,7 @@ h1{
     background-color:rgb(35, 133, 224);
     padding: 10px 30px;
     border-radius: 30px;
+    margin-top: 10px;
 }
 #read-more:hover{
     color: black;
@@ -240,24 +241,6 @@ footer{
 }
 
 
-
-/*tablet*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*mobile*/
 
 @media only screen and (max-width: 600px){
@@ -296,6 +279,7 @@ footer{
         padding-bottom: 0;
         margin-bottom: 0;
     }
+
     .title{
        top:45%
     }
@@ -303,8 +287,6 @@ footer{
         font-size: 25px;
         padding-bottom: 13px;
     }
-
-
     .title-section{
         width: fit-content;
         margin-top: 5px;
@@ -327,16 +309,10 @@ footer{
     .about-description {
        padding-top: 15px;
     }
-
-
-
     .people-content{
         flex-direction: column;
         width: 100%;
         padding: 20px 40px;
-    }
-    .contact-content{
-        flex-direction: column; 
     }
     .people-description{
         margin: 5px;
@@ -344,25 +320,24 @@ footer{
     .name{
         margin: 5px;
     }
-    
-    div iframe{
-        margin-top: 500px;
-    }
+
 
     .contact-content{
         flex-direction: column; 
     }
     .contact-type{
         flex-direction: column; 
-        width: 100%;
         height: 400px;
     }
     .contact-type h4{
-        margin-left: 150px;
+        text-align: center;
     }
 
 
-
+    div iframe{
+        margin-top: 500px;
+    }
+    
     input{
         width: 100%;
     }
@@ -371,9 +346,7 @@ footer{
         margin-left: 10px;
     }
 
-
-
-
-    }
+}
+   
     
     
