@@ -127,12 +127,88 @@
 // changeThird()
 
 
-function setColorLi() {
+// function setColorLi() {
 
-    var active = document.querySelector(".active");
-    active.className = "";
-    active.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild.className = 'active'
+//     var active = document.querySelector(".active");
+//     active.className = "";
+//     active.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild.className = 'active'
+// }
+
+// setColorLi()
+
+
+
+// function takesText() {
+//     var a = document.querySelector('#first').textContent
+//     alert(a)
+// }
+// takesText()
+
+
+// function takeTextAsArgument(a) {
+//     var b = document.querySelector('#forth').lastChild.textContent = a
+// }
+
+// takeTextAsArgument('nov paragraf')
+
+
+
+
+
+// var city = ['Barcelona', 'NY', 'Doha', 'Kairo'];
+// var mainDiv = document.querySelector('div')
+
+// function createSelect(data, target) {
+//     var select = document.createElement('select')
+
+//     for (let i = 0; i < data.length; i++) {
+//         var option = document.createElement('option')
+//         option.textContent = data[i]
+//         select.appendChild(option)
+//     }
+//     target.appendChild(select)
+// }
+// createSelect(city, mainDiv)
+
+
+// var color = ['blue', 'pink', 'red'];
+// var secondDiv = document.querySelector('div')
+
+// function secondSelect(data, target) {
+//     var select = document.createElement('select')
+
+//     for (let i = 0; i < data.length; i++) {
+//         var option = document.createElement('option')
+//         option.textContent = data[i]
+//         select.appendChild(option)
+//     }
+//     target.appendChild(select)
+// }
+// secondSelect(color, secondDiv)
+
+
+// var sport = ['Tennis', 'Baseball', 'F1', 'MotoGP']
+// var thirdDiv = document.querySelector('div')
+
+// function a(data, target) {
+//     var b = '<select>'
+//     for (let i = 0; i < data.length; i++) {
+//         b += '<option>' + data[i] + '</option>'
+//     }
+//     b += '<select>'
+//     target.innerHTML = b
+// }
+// a(sport, thirdDiv)
+
+
+// var header = document.querySelector('header')
+// header.style.backgroundColor = 'red'
+
+
+function myFunction() {
+    var x = document.forms['myForm'].value
+    if (x == "") {
+        alert('Name must be filled out'.style.border = 'red')
+        return false
+    }
 }
-
-setColorLi()
-

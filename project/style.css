@@ -194,7 +194,7 @@ p{
    margin-left: 160px;
 }  
 .ikonice-conect{
-    margin-left: 180px;
+    margin-left: 170px;
     margin-top: 40px;
 }
 #slicice{
@@ -275,25 +275,25 @@ footer{
         padding: 5px 8px;
     }    
     header{
-        height:700px;
+        height:900px;
         padding-bottom: 0;
         margin-bottom: 0;
+        background-position: 10px;
     }
-
-    .title{
-       top:45%
-    }
+    
+    
     h1{
-        font-size: 25px;
+        font-size: 30px;
         padding-bottom: 13px;
     }
+    
     .title-section{
         width: fit-content;
         margin-top: 5px;
         padding-top: 5px;
     }
 
-    .about-section{
+    #about-section{
         width: 100%;
     }
     .about-content{
@@ -302,12 +302,17 @@ footer{
         padding: 20px 40px;
         margin-bottom: 50px;
     }
+
     h4{
         width: 100%;
-        margin: 15px 15px;
+        margin: 15px 0px;
     }
     .about-description {
        padding-top: 15px;
+       width: 100%;
+    }
+    .people-description>p{
+        width: 80%;
     }
     .people-content{
         flex-direction: column;
@@ -316,6 +321,7 @@ footer{
     }
     .people-description{
         margin: 5px;
+        
     }
     .name{
         margin: 5px;
@@ -324,19 +330,26 @@ footer{
 
     .contact-content{
         flex-direction: column; 
+        height: 800px;
     }
     .contact-type{
         flex-direction: column; 
         height: 400px;
+        width: 50%;
     }
     .contact-type h4{
         text-align: center;
     }
-
-
-    div iframe{
-        margin-top: 500px;
+    .info{
+        margin-left: 70px;
     }
+    .ikonice-conect{
+        padding-left: 55px;
+    }
+    #house{
+        margin-left: 200px;
+     }  
+
     
     input{
         width: 100%;
@@ -348,5 +361,37 @@ footer{
 
 }
    
+
+
+/*tablet*/
     
+@media only screen and (max-width: 1000px){
+    header{
+       height: 500px;
+    }
+    .title{
+       top: 40%;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+
+    .about-content{
+    flex-direction: column;
+    }
+    .about-description{
+        width: 50%;
+    }
+
+
+    
+    .contact-content{
+       
+    }
+ 
+    textarea{
+        width: 95%;
+    }
+}
     

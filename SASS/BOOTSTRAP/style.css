@@ -203,12 +203,25 @@ h4 {
     }
     ul{
         flex-direction: column;
+        width: 100%;
+    }
+    ul>li{
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background: #69849e;
     }
     #naslov{
         font-size: 40px;
     }
     .bouth-lorem{
         width: 100%;
+    }
+    .lorem1{
+        margin-left: 30px;
+    }
+    .lorem2{
+        margin-left: 30px;
     }
     .container2{
        height: 700px;
