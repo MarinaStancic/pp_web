@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./99bb69e4680b0bc9c4c806f5f0f87ad5.png');
+    background-size: cover;
+}
+.mario {
+    position: absolute;
+    background-image: url('./mario.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+    top: 80%;
+    left: 44%;
+    transition: all .25s ease;
+}
+.running {
+    background-image: url('./mario_running.gif');
+}
