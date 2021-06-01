@@ -3,92 +3,92 @@
  */
 
 messi = {
-    img : "./messi.jpeg",
-    name : "Leo Messi",
+    img: "./messi.jpeg",
+    name: "Leo Messi",
     position: "Forward",
     number: 1
 }
 terStegen = {
-    img : "./terStegen.jpeg",
-    name : "Ter Stegen",
+    img: "./terStegen.jpeg",
+    name: "Ter Stegen",
     position: "Goalkeeper",
     number: 2
 }
-ansu =  {
-    img : "./ansu.jpeg",
-    name : "Ansu Fati",
+ansu = {
+    img: "./ansu.jpeg",
+    name: "Ansu Fati",
     position: "Forward",
     number: 3
 }
-dembele =  {
-    img : "./dembele.jpeg",
-    name : "Dembele",
+dembele = {
+    img: "./dembele.jpeg",
+    name: "Dembele",
     position: "Forward",
     number: 4
 }
-pique =  {
-    img : "./pique.jpeg",
-    name : "Gerard Pique",
+pique = {
+    img: "./pique.jpeg",
+    name: "Gerard Pique",
     position: "Forward",
     number: 5
 }
-pedri =  {
-    img : "./pedri.jpeg",
-    name : "Pedri",
+pedri = {
+    img: "./pedri.jpeg",
+    name: "Pedri",
     position: "Forward",
     number: 6
 }
-moriba =  {
-    img : "./moriba.jpeg",
-    name : "Moriba",
+moriba = {
+    img: "./moriba.jpeg",
+    name: "Moriba",
     position: "Midfielder",
     number: 7
 }
-deJong =  {
-    img : "./deJong.jpeg",
-    name : "De Jong",
+deJong = {
+    img: "./deJong.jpeg",
+    name: "De Jong",
     position: "Midfielder",
     number: 8
 }
-alba =  {
-    img : "./alba.jpeg",
-    name : "Jordi Alba",
+alba = {
+    img: "./alba.jpeg",
+    name: "Jordi Alba",
     position: "Defender",
     number: 9
 }
-umtiti =  {
-    img : "./umtiti.jpeg",
-    name : "Umtiti",
+umtiti = {
+    img: "./umtiti.jpeg",
+    name: "Umtiti",
     position: "Defender",
     number: 10
 }
-neto =  {
-    img : "./neto.jpeg",
-    name : "Neto",
+neto = {
+    img: "./neto.jpeg",
+    name: "Neto",
     position: "Goalkeeper",
     number: 11
 }
-coutinho =  {
-    img : "./kutinjo.jpeg",
-    name : "Coutinho",
+coutinho = {
+    img: "./kutinjo.jpeg",
+    name: "Coutinho",
     position: "Midfielder",
     number: 12
 }
-griezmann =  {
-    img : "./griezmann.jpeg",
-    name : "Griezmann",
+griezmann = {
+    img: "./griezmann.jpeg",
+    name: "Griezmann",
     position: "Forward",
     number: 13
 }
-busquets =  {
-    img : "./sergio.jpeg",
-    name : "Busquets",
+busquets = {
+    img: "./sergio.jpeg",
+    name: "Busquets",
     position: "Midfielder",
     number: 14
 }
-pjanic =  {
-    img : "./pjanic.jpeg",
-    name : "Pjanic",
+pjanic = {
+    img: "./pjanic.jpeg",
+    name: "Pjanic",
     position: "Defender",
     number: 15
 }
@@ -98,7 +98,7 @@ var klupa = [];
 
 //random uzmemo 4 elementa iz var tim i ostavimo ih u var klupa, i obrisemo ih iz var tim
 
-function randomNum(arr){
+function randomNum(arr) {
     var randomIndex = Math.random() * arr.length //uzima random index u zavisnosti od duzine niza
     var floor = Math.floor(randomIndex)  //uzima donju vredost decimalnog broja
     var element = arr[floor]  //definisemo element niza
@@ -108,7 +108,7 @@ for (let i = 0; i < 4; i++) {
     var a = randomNum(tim);  //vrednost var a je randomNum od niza
     klupa.push(a) //pusovala sam jedan element u array
     var index = tim.indexOf(a) //vrednost var index je index od nekog elementa niza
-    tim.splice(index,1)    //jedan element brisemo iz niza uz pomoc njegovog indexa
+    tim.splice(index, 1)    //jedan element brisemo iz niza uz pomoc njegovog indexa
 }
 
 var timContainer = document.getElementById('prvi-tim')  //vrednost var je element sa id prvi-tim
@@ -125,7 +125,7 @@ for (let i = 0; i < klupa.length; i++) {
     createProfile(element, klupaContainer);
 }
 
-function createProfile(e, container){
+function createProfile(e, container) {
     //create div profile-parent
     var divProfile = document.createElement('div')
     divProfile.id = "profile"
