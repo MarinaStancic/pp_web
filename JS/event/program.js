@@ -29,15 +29,18 @@
 
 
 
-// function addListeners() {
-//     document.querySelector('body').addEventListener('click', divMove);
-// }
+function addListeners() {
+    document.querySelector('body').addEventListener('click', divMove);
+}
 
-// function divMove(e) {
-//     var div = document.getElementById('image');
-//     div.style.position = 'absolute';
-//     div.style.top = e.clientY + 'px';
-//     div.style.left = e.clientX + 'px';
-// }
+function divMove(e) {
+    var div = document.getElementById('image');
+    div.style.position = 'absolute';
+    div.style.top = e.clientY + 'px';
+    div.style.left = e.clientX + 'px';
+}
 
-// addListeners();
+addListeners();
+
+
+
