@@ -5,7 +5,7 @@ var image = document.createElement('img');
 function getData() {
     var req = new XMLHttpRequest()
     req.open('GET', 'https://dog.ceo/api/breeds/image/random')
-
+    console.log(req);
     req.send()
 
     req.onload = function () {
