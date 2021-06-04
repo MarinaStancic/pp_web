@@ -1,12 +1,15 @@
-body{
+html, body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 .container-fluid{
-    background-color:rgb(155, 152, 152);
     height: 100px;
+    border-bottom: 2px solid gray;
+    background-color: rgb(200, 199, 197);
 }
+
 .navbar-brand{
     font-size: 70px;
     border: 3px solid black;
@@ -15,34 +18,57 @@ body{
     margin-left: 20px;
     padding: 3px 10px;
 }
+
 .d-flex{
     margin-top: 10px;
     margin-right: 20px;
 }
+
 .button{
     background-color: rgb(185, 5, 5);
     margin: 0 5px;
 }
+
 main{
     display: flex;
     flex-wrap: wrap;
 }
-div{
+
+main > div{
     margin: 20px 20px;
+    background-color: rgb(200, 199, 197);
+    padding: 15px;
 }
+
 h5{
     font-size: 15px;
     font-style: italic;
     justify-content: center;
+    text-align: center;
 }
+
 img{
     width: 400px;
+    height: 350px;
     border: 2px solid black;
-    padding: 15px;
-    margin-left: 50px;
-    margin-right: none;
+    padding: 10px;
+    margin-left: 100px;
+    
 }
+
 main > div{
     flex-grow: 1;
     width: 31%;
+}
+
+p{
+    padding: 10px 30px;
+}
+
+#preview{
+    display: none;
+}
+
+#preview.visible{
+   display: block;
 }
