@@ -1,0 +1,56 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 80px;
+    background-color: rgb(88, 87, 86);
+}
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.d-flex{
+    margin-right: 10%;
+}
+
+
+h1{
+    font-size: larger;
+    text-align: center;
+    margin-top: 20px;
+}
+.main-container{
+    width: 50%;
+    margin-left: 25%;
+}
+#preview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#preview > div {
+    min-width: 31%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+#preview > div > h4{
+    color: rgb(44, 94, 243);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+footer{
+    background-color: rgb(88, 87, 86);
+    height: 80px;
+    margin-top: 20px;
+}
+footer > p{
+    text-align: center;
+    padding-top: 30px;
+}
