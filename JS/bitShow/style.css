@@ -1,56 +1,88 @@
-html,body{
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container-fluid{
+
+/* Navigation bar */
+
+#myNavbar {
+    padding-top: 0;
+}
+
+.container-fluid {
     height: 80px;
     background-color: rgb(88, 87, 86);
 }
-.navbar-brand{
+
+.navbar-brand {
     color: white;
     font-weight: bold;
     margin-left: 10%;
 }
-.d-flex{
+
+.d-flex {
     margin-right: 10%;
 }
 
+/* Title */
 
-h1{
+h1 {
     font-size: larger;
     text-align: center;
     margin-top: 20px;
 }
-.main-container{
+
+/* Main content */
+
+.main-container {
     width: 50%;
     margin-left: 25%;
-}
-#preview{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#preview > div {
+#preview {
     min-width: 31%;
     margin-bottom: 25px;
     margin-top: 25px;
     text-align: center;
 }
-#preview > div > h4{
+
+#preview>h4 {
     color: rgb(44, 94, 243);
     padding-top: 10px;
     font-size: 14px;
 }
 
+/* Dropdown menu */
 
-footer{
+#search {
+    width: 200px;
+}
+
+#dropdownList {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#dropdownList>li {
+    width: 200px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black
+}
+
+/* Footer */
+
+footer {
     background-color: rgb(88, 87, 86);
     height: 80px;
     margin-top: 20px;
 }
-footer > p{
+
+footer>p {
     text-align: center;
     padding-top: 30px;
 }

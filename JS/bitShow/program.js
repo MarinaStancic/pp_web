@@ -1,93 +1,71 @@
 var input = document.querySelector('input');
 var main = document.querySelector('main');
 var mainContainer = document.querySelector('.main-container')
-var preview = document.querySelector('#preview');
+var dropdownMenu = document.querySelector('#dropdownList')
 
 
-//first
-function createPreview(datas) {
-    datas.forEach(data => {
-        makePreview(data)
-    });
-}
+function createPreview(data) {
+    var preview = document.createElement("div");
+    preview.id = "preview";
+    var img = document.createElement("img");
+    img.src = data.image.medium;
+    var title = document.createElement("h4");
+    title.textContent = data.name;
 
-function makePreview(data) {
+    preview.appendChild(img);
+    preview.appendChild(title);
 
-    var nekDiv = document.createElement('div')
-    var movieImg = document.createElement('img');
-    var movieTitle = document.createElement('h4');
-
-    movieImg.src = data.image.medium;
-    movieTitle.textContent = data.name;
-    nekDiv.appendChild(movieImg);
-    nekDiv.appendChild(movieTitle);
-
-    preview.appendChild(nekDiv)
     mainContainer.appendChild(preview);
-    main.appendChild(mainContainer);
 }
 
-function getInfo() {
-    var req = new XMLHttpRequest()
+function getTVShows() {
+    var req = new XMLHttpRequest();
     req.open('GET', 'http://api.tvmaze.com/shows')
-    console.log(req);
-
     req.onload = function () {
-        var datas = JSON.parse(req.responseText);
-        createPreview(datas)
-    }
-    req.send()
-}
-
-getInfo()
-
-//second
-
-function dropDownList() {
-    var req = new XMLHttpRequest;
-    if (e.keyCode !== undefined) {
-        req.open('GET', 'http://api.tvmaze.com/shows')
-
-        req.onload = function () {
-            var datas = JSON.parse(req.responseText);
-        }
+        var tvShows = JSON.parse(req.responseText)
+        tvShows.forEach(data => {
+            createPreview(data)
+        });
     }
     req.send();
 }
 
-
-
-
-
-
-//third
-
-function createMovieList() {
-    var req = new XMLHttpRequest;
-    var movieId = data.url;
-    if (e.keyCode === 13) {
-        var content = input.value
-        // input.value = ''
-        req.open('GET', `http://api.tvmaze.com/shows${movieId}`)
-        console.log(req);
-
-        req.onload = function () {
-            var datas = JSON.parse(req.responseText);
-            listOfMovies(datas)
-        }
-        req.send()
+function filterTvShows() {
+    var searchView = document.getElementById("search");
+    var value = searchView.value;
+    var req = new XMLHttpRequest();
+    req.open('GET', `http://api.tvmaze.com/search/shows?q=${value}`)
+    req.onload = function () {
+        var tvShowSuggestions = JSON.parse(req.responseText)
+        dropdownMenu.innerHTML = ''
+        tvShowSuggestions.forEach(tvShow => {
+            createSuggestions(tvShow);
+        })
     }
-
-    function listOfMovies(datas) {
-        datas.forEach(data => {
-            makeVideo(data)
-        });
-    }
-
-    function makeListOfMovies(data) {
-        makePreview()
-    }
+    req.send();
 }
 
-createMovieList();
-input.addEventListener('keypress', createMovieList);
+function createSuggestions(tvSuggestion) {
+    var titleText = tvSuggestion.show.name
+    var id = tvSuggestion.show.id
+    var li = document.createElement("li")
+    li.textContent = titleText;
+    li.addEventListener("click", () => {
+        openShow(id)
+    });
+    dropdownMenu.appendChild(li);
+}
+
+function openShow(showId) {
+    var req = new XMLHttpRequest();
+    req.open('GET', `http://api.tvmaze.com/shows/${showId}`)
+    req.onload = function () {
+        var show = JSON.parse(req.responseText);
+        console.log(show);
+        localStorage["tvShow"] = JSON.stringify(show)
+        window.location = 'index2.html';
+    }
+    req.send();
+}
+
+getTVShows();
