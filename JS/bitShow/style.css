@@ -44,7 +44,7 @@ h1 {
 }
 
 #preview {
-    min-width: 31%;
+    min-width: 32%;
     margin-bottom: 25px;
     margin-top: 25px;
     text-align: center;
@@ -62,16 +62,20 @@ h1 {
     width: 200px;
 }
 
+#myDropdown{
+    position: relative;
+}
 #dropdownList {
     padding-left: 0px;
     list-style: none;
+    position: absolute;
 }
 
 #dropdownList>li {
     width: 200px;
     padding: 5px;
     background-color: white;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 /* Footer */

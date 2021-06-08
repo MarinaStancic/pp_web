@@ -16,6 +16,11 @@ function createPreview(data) {
     preview.appendChild(title);
 
     mainContainer.appendChild(preview);
+
+    preview.addEventListener('click', function () {
+        localStorage.setItem('ID', `${data.id}`)
+        openShow(data.id);
+    })
 }
 
 function getTVShows() {

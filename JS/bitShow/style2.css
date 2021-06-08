@@ -20,14 +20,35 @@ h1{
     text-align: center;
     font-size: 18px;
 }
-.container{
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    background-color: royalblue;
+
+
+/* Main container */
+
+#container{
+    width: 60%;
+    margin-left: 20%;
 }
-.img{
-    width: 45%;
-    height: 700px;
-    background-color: salmon;
+
+img{
+    width: 50%;
+    height: 600px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(88, 87, 86);
+    height: 80px;
+    margin-top: 20px;
+}
+
+footer>p {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
 }
