@@ -3,7 +3,11 @@ var container = document.querySelector('.container')
 
 import { getData } from './fetch.js';
 
-getData().then(data => function createPreview(data) {
+getData().then(arr => arr.forEach(element => {
+    createPreview(element)
+}))
+
+function createPreview(data) {
     
     var preview = document.createElement("div");
     preview.id = "preview";
@@ -17,7 +21,5 @@ getData().then(data => function createPreview(data) {
     preview.appendChild(name);
 
     container.appendChild(preview);
-    main.appendChild(container)
 
-   
-})
+}

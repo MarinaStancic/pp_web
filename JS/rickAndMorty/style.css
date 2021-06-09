@@ -11,18 +11,62 @@ header{
 }
 header > p{
     padding: 18px;
+    margin-top: 0;
 }
 body{
     background: url('./bg.jpg');
 }
 .container{
-    background-color: rgb(231, 133, 182);
+    display: flex;
+    flex-wrap: wrap;
     width: 60%;
-    /* height: 100%; */
     margin-left: 20%;
     margin-top: 5%;
 }
 #preview{
-    width: 31%;
-    height: 200px;
+    background-color: white;
+    width: 29%;
+    height: 350px;
+    margin: 10px 5px;
+  
+}
+#preview > img{
+    width: 100%;
+}
+#footer {
+    padding: 10px;
+}
+#footer > p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+#footer > button{
+    width: 100%;
+    height: 20px;
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+    border-radius: 5px;
+}
+#footer > button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    background-color: white;
+    width: fit-content;
+    padding: 0;
+    height: 30px;
+}
+ul >li{
+    border: 1px solid;
+    width: 30px; /* Alternatively, you could set a specific width on the ul, and use flex-grow:1 here to make all the li elements the same width */
+    display: flex; /* allows align-items to work below */
+    justify-content: center; /* Horizontally centers single-line elements */
+    text-align:center; /* Horizontally centers text within line-wrapped elements */
+    align-items: center; /* vertical */
 }
